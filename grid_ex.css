@@ -1,18 +1,19 @@
 .box-container {
     display: grid;
-    grid-gap: 15px;
+    background: gray;
     grid-template-columns: auto;
     grid-template-rows: auto;
     grid-template-areas:
-    header header header header header header;
-    sidebar sidebar sidebar main main main;
-    sidebar sidebar sidebar footer footer footer;
-
+    "header header header header header header"
+    "header header header header header header"
+    "sidebar sidebar sidebar main main main"
+    "sidebar sidebar sidebar footer footer footer";
+    text-align: center;
+/* próbuję tutaj wstawić grid-gap, ale nie działa.... why??? */
 }
 
     .header {
-    grid-area: header;
-
+        grid-area: header;
 }
     .sidebar {
         grid-area: sidebar;
